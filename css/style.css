@@ -1,0 +1,189 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'MonospaceTypewriter';
+  src: url(../fonts/MonospaceTypewriter.woff) format('woff'),
+    url(../fonts/MonospaceTypewriter.woff2) format('woff2');
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: 'MonospaceTypewriter', 'Courier New', Courier, monospace;
+  background-color: #2e2a2a;
+}
+
+.container {
+  max-width: 1250px;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.game-section__container {
+  display: flex;
+  max-width: 430px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.game-title {
+  margin: 0;
+  padding: 30px 0;
+  color: #fff;
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.game-menu__title {
+  margin: 0;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #d1c3c3;
+}
+
+.game-menu__level-btn {
+  width: 75px;
+  padding: 15px 0;
+  margin: 0;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  color: aqua;
+  background-color: cadetblue;
+  border-radius: 15px;
+  transition: background-color .4s ease-in-out, color .4s ease-in-out;
+}
+
+.game-menu__level-btn:hover {
+  color: azure;
+  background-color: cornflowerblue;
+}
+
+.game {
+  max-width: 500px;
+  padding: 30px 0;
+  margin: 0 auto;
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+}
+
+.card {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 2px solid #fff;
+  background-color: #78767c;
+  font-size: 0;
+  border-radius: 15px;
+  cursor: pointer;
+  background-image: url(../img/question.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: background-color .4s ease-in-out;
+}
+
+.card:hover {
+  background-color: #ae9ece;
+}
+
+.open {
+  color: #fff;
+  font-size: 46px;
+  font-weight: 700;
+  background-color: #645583;
+  cursor: default;
+  background-image: none;
+  border: 2px solid #fff;
+}
+
+.open:hover {
+  background-color: #645583;
+}
+
+.open:active {
+  background-color: #645583;
+}
+
+.pair {
+  color: #fff;
+  font-size: 46px;
+  font-weight: 700;
+  background-color: #2e723d;
+  cursor: default;
+  background-image: none;
+  border: 2px solid #fff;
+}
+
+.pair:hover {
+  background-color: #2e723d;
+}
+
+.pair:active {
+  background-color: #2e723d;
+}
+
+.menu-title {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 26px;
+  color: #fff;
+}
+
+.form-group {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.input {
+  width: 17%;
+  margin-right: 10px;
+  padding: 0 10px;
+  border-radius: 15px;
+  outline: none;
+  font-size: 26px;
+  color: #78767c;
+}
+
+.reset-btn {
+  width: 75px;
+  padding: 15px 0;
+  margin-top: 30px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  color: aqua;
+  background-color: cadetblue;
+  border-radius: 15px;
+  transition: background-color .4s ease-in-out, color .4s ease-in-out;
+}
+
+.reset-btn:hover {
+  color: azure;
+  background-color: cornflowerblue;
+}
